@@ -1,0 +1,12 @@
+plugin {
+  tx_letitsnow {
+    view {
+      # cat=plugin.tx_letitsnow/file; type=string; label=Path to template root (FE)
+      templateRootPath = EXT:letitsnow/Resources/Private/Templates/
+      # cat=plugin.tx_letitsnow/file; type=string; label=Path to template partials (FE)
+      partialRootPath = EXT:letitsnow/Resources/Private/Partials/
+      # cat=plugin.tx_letitsnow/file; type=string; label=Path to template layouts (FE)
+      layoutRootPath = EXT:letitsnow/Resources/Private/Layouts/
+    }
+  }
+}

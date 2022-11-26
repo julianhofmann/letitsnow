@@ -1,0 +1,10 @@
+phpcs:
+  extends: .default
+  stage: codestyle
+  needs:
+    - build-composer-dependencies
+    - php-lint-php7.4
+    - php-lint-php8.0
+    - php-lint-php8.1
+  script:
+    - composer ci:php:sniff

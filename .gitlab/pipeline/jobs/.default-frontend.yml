@@ -1,0 +1,10 @@
+.default-frontend:
+  image: node:latest
+  needs: [ ]
+  cache:
+    key: "$CI_PROJECT_ID"
+    paths:
+      - Resources/Private/node_modules/
+      - Resources/Private/.yarn
+  before_script:
+    - yarn install --cache-folder .yarn

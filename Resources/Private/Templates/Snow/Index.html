@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+    <f:asset.css identifier="normalize" href="EXT:letitsnow/Resources/Public/Plugins/let-it-snow/css/normalize.css"/>
+    <f:asset.css identifier="letitsnow" href="EXT:letitsnow/Resources/Public/Plugins/let-it-snow/css/letitsnow.css"/>
+
+    <f:asset.script identifier="jquery" src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"/>
+    <f:asset.script identifier="letitsnowModernizr" src="EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/modernizr.min.js"/>
+    <f:asset.script identifier="letitsnowPrefixfree" src="EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/prefixfree.min.js"/>
+    <f:asset.script identifier="letitsnowLetitsnow" src="EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/letitsnow.min.js"/>
+    <f:asset.script identifier="letitsnow">
+        $( document ).ready(function() {
+            $('#letitsnow').on( "click", function() { $('body').letItSnow()}, false));
+        });
+    </f:asset.script>
+    <button id="letitsnow">Come on and let it snow!</button>
+</f:section>
+</html>

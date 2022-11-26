@@ -1,0 +1,45 @@
+page {
+  includeCSS {
+    normalize = EXT:letitsnow/Resources/Public/Plugins/let-it-snow/css/normalize.css
+    letitsnow = EXT:letitsnow/Resources/Public/Plugins/let-it-snow/css/letitsnow.css
+  }
+
+  includeJSFooterlibs {
+    jquery = https://code.jquery.com/jquery-3.6.1.slim.min.js
+    jquery {
+      external = 1
+      integrity = sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=
+      crossorigin = anonymous
+    }
+
+    letitsnowModernizr = EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/modernizr.min.js
+    letitsnowPrefixfree = EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/prefixfree.min.js
+    letitsnowLetitsnow = EXT:letitsnow/Resources/Public/Plugins/let-it-snow/js/letitsnow.min.js
+  }
+
+  jsFooterInline {
+    10 = COA
+    10 {
+      if {
+        isGreaterThan.data = date:U
+        value = 1668466800
+      }
+
+      10 = COA
+      10 {
+        if {
+          isGreaterThan.data = date:U
+          value = 1675724399
+          negate = 1
+        }
+
+        10 = TEXT
+        10.value (
+              jQuery(document).ready(function() {
+                  $("body").letItSnow();
+              });
+        )
+      }
+    }
+  }
+}
