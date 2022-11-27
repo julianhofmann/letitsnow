@@ -14,5 +14,5 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'] = array_m
     $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'] ?? [],
     [
     'letitsnow_letitsnow' => 'recursive,select_key,pages',
-]
+    ]
 );
