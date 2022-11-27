@@ -13,7 +13,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use Xitnelat\LetItSnow\Controller\SnowController;
 
 /**
- * @covers \Xitnelat\LetItSnow\Controller\TeaController
+ * @covers \Xitnelat\LetItSnow\Controller\SnowController
  */
 class SnowControllerTest extends UnitTestCase
 {
