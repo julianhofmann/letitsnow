@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Let it snow',
     'description' => 'Spreads a bit of wintry vibes for the visitors of the website sitting on the sofa.',
-    'version' => '1.0.1',
+    'version' => '1.0.2',
     'category' => 'frontend',
     'constraints' => [
         'depends' => [
